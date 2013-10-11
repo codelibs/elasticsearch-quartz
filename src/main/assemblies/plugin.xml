@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<assembly>
+	<id></id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>/</outputDirectory>
+			<useProjectArtifact>true</useProjectArtifact>
+			<useTransitiveFiltering>true</useTransitiveFiltering>
+			<excludes>
+				<exclude>org.elasticsearch:elasticsearch</exclude>
+				<exclude>junit:junit</exclude>
+				<exclude>org.easymock:easymock</exclude>
+				<exclude>log4j:log4j</exclude>
+			</excludes>
+		</dependencySet>
+	</dependencySets>
+</assembly>
