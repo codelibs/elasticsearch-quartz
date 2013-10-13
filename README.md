@@ -22,16 +22,23 @@ Therefore, you can use scheduleService in your Service or River class as below:
         final Client client, final ScheduleService scheduleService) {
         ...
 
+ScheduleService delegates Scheduler's methods of Quartz.
+
 ### Register Job
 
 ScheduleService allows you to register your Job and Trigger of Quartz.
 
-    scheduleService.schedule(job, trigger);
+    scheduleService.scheduleJob(job, trigger);
 
 ### Unregister Job
 
 You can remove your job by group and job ID.
 
-    scheduleService.unschedule(groupId, jobId);
+    import static org.quartz.JobKey.jobKey;
+    
+    ...
+    
+    scheduleService.deleteJob(jobKey(groupId, jobId));
+
 
 
