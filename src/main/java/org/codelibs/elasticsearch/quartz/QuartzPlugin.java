@@ -20,7 +20,6 @@ public class QuartzPlugin extends AbstractPlugin {
         return "This is a elasticsearch-quartz plugin.";
     }
 
-
     // for Service
     @Override
     public Collection<Class<? extends Module>> modules() {
