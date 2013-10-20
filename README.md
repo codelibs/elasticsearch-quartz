@@ -10,9 +10,22 @@ In your Elasticsarch plugin, you can register a job and start it at a specified 
 
 ### Install Quartz Plugin
 
-    $ $ES_HOME/bin/plugin -url file:$DOWNLOAD_DIR/elasticsearch-quartz-*.zip -install quartz
+    $ $ES_HOME/bin/plugin -install org.codelibs/elasticsearch-solr-api/1.0.0
 
 ## Usage
+
+### Edit pom.xml
+
+Put the following dependency to your pom.xml.
+
+    <dependency>
+      <groupId>org.codelibs</groupId>
+      <artifactId>elasticsearch-quartz</artifactId>
+      <version>1.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+### Inject ScheduleService
 
 Quartz plugin provides ScheduleService instance to DI container(Guice) of Elasticsearch.
 Therefore, you can use scheduleService in your Service or River class as below:
