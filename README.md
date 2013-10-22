@@ -51,7 +51,7 @@ You can remove your job by group and job ID.
     
     ...
     
-    scheduleService.deleteJob(jobKey(groupId, jobId));
+    scheduleService.deleteJob(jobKey(jobId, groupId));
 
 
 
