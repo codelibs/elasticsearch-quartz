@@ -10,7 +10,7 @@ In your Elasticsarch plugin, you can register a job and start it at a specified 
 
 ### Install Quartz Plugin
 
-    $ $ES_HOME/bin/plugin -install org.codelibs/elasticsearch-solr-api/1.0.0
+    $ $ES_HOME/bin/plugin -install org.codelibs/elasticsearch-quartz/1.0.0
 
 ## Usage
 
@@ -31,7 +31,7 @@ Quartz plugin provides ScheduleService instance to DI container(Guice) of Elasti
 Therefore, you can use scheduleService in your Service or River class as below:
 
     @Inject
-    public WebRiver(final RiverName riverName, final RiverSettings settings,
+    public YourRiver(final RiverName riverName, final RiverSettings settings,
         final Client client, final ScheduleService scheduleService) {
         ...
 
