@@ -1,9 +1,9 @@
 package org.codelibs.elasticsearch.quartz;
 
-import org.elasticsearch.ElasticSearchException;
+import org.elasticsearch.ElasticsearchException;
 import org.quartz.SchedulerException;
 
-public class QuartzSchedulerException extends ElasticSearchException {
+public class QuartzSchedulerException extends ElasticsearchException {
 
     private static final long serialVersionUID = 1L;
 
